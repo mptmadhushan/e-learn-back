@@ -1,5 +1,5 @@
 module.exports = (app) => {
-  const items = require("../controllers/SPO2.controller");
+  const items = require("../controllers/course.controller");
 
   var router = require("express").Router();
 
@@ -11,5 +11,5 @@ module.exports = (app) => {
 
   router.delete("/:id", items.delete);
 
-  app.use("/api/spo2", router);
+  app.use("/api/course", router);
 };

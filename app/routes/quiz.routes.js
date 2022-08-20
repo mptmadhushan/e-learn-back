@@ -1,5 +1,5 @@
 module.exports = (app) => {
-  const items = require("../controllers/activity.controller");
+  const items = require("../controllers/quiz.controller");
 
   var router = require("express").Router();
 
@@ -11,5 +11,5 @@ module.exports = (app) => {
 
   router.delete("/:id", items.delete);
 
-  app.use("/api/activity", router);
+  app.use("/api/quiz", router);
 };
